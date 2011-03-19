@@ -1,13 +1,14 @@
 Avtryck (Web)
 =============
 
-En del av ett bidrag till [Appening][appening].
+En del av ett [bidrag][aandroid] till [Appening][appening].
 
 Depends on -- and includes -- BluePrint [bp] and jQuery [jq].
 
 [appening]: http://www.appening.se
 [bq]: http://http://www.blueprintcss.org/
 [jq]: http://www.jquery.com
+[aandroid]: https://github.com/nollbit/Avtryck
 
 Licens
 ======
