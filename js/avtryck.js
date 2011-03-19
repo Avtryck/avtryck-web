@@ -2,7 +2,7 @@ var avtryck = {
 	map: null,
 	dummyMarkers : [],
 	initMaps : function() {
-	    var latlng = new google.maps.LatLng( 62.4007043202567, 17.2577392061653);
+	    var latlng = new google.maps.LatLng( 62.4008043502567, 17.2977392061653);
 	    var myOptions = {
 	        zoom: 13,
 	        center: latlng,
@@ -32,6 +32,58 @@ var avtryck = {
 			  map: avtryck.map,
 			  icon: "images/marker_white.jpg"
 		  });
+	},
+	addPlaceMarkers: function() {
+		/*
+        loc1.setLatitude(62.4007043202567);
+        loc1.setLongitude(17.2577392061653);
+        place1.setGeoLocation(loc1);
+
+        Location loc2 = new Location("se.tidensavtryck");
+        loc2.setLatitude(62.394369903217); 
+        loc2.setLongitude(17.2816450479837);
+        place2.setGeoLocation(loc2);
+
+        Location loc3 = new Location("se.tidensavtryck");
+        loc3.setLatitude(62.3897829867526); 
+        loc3.setLongitude(17.2995418371631);
+        place3.setGeoLocation(loc3);
+        
+        Location loc4 = new Location("se.tidensavtryck");
+        loc4.setLatitude(62.391178326117); 
+        loc4.setLongitude(17.3004228024664);
+        place4.setGeoLocation(loc4);
+		*/
+
+		places = [
+			{plat: 62.4007043202567, plong:17.2577392061653, name: "place1"},
+			{plat: 62.394369903217, plong:17.2816450479837, name: "place2"},
+			{plat: 62.3897829867526, plong:17.2995418371631, name: "place3"},
+			{plat: 62.391178326117, plong:17.3004228024664, name: "place4"},
+		];
+		
+		routeLatLongs = [];
+		for (var pi=0; pi<4; pi++) {
+			p = places[pi];
+			seq = pi+1;
+			icon = "http://thydzik.com/thydzikGoogleMap/markerlink.php?color=FF1c54&text="+seq
+			pos = new google.maps.LatLng(p.plat,p.plong),
+			new google.maps.Marker({
+			      position: pos,
+			      title:p.name,
+				  map: avtryck.map,
+				  icon: icon,
+			  });
+			routeLatLongs.push(pos);
+		}
+		
+	  var routePath = new google.maps.Polyline({
+	    path: routeLatLongs,
+	    strokeColor: "#FF0000",
+	    strokeOpacity: 1.0,
+	    strokeWeight: 2,
+		map: avtryck.map,
+	  });
 	}
 };
 
@@ -40,5 +92,6 @@ function initialize() {
 $(document).ready(function(){
 	avtryck.initMaps();
 	avtryck.addDummyMarkers();
+	avtryck.addPlaceMarkers();
 	
 });
