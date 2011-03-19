@@ -3,7 +3,11 @@ Avtryck (Web)
 
 En del av ett bidrag till [Appening][appening].
 
+Depends on -- and includes -- BluePrint [bp] and jQuery [jq].
+
 [appening]: http://www.appening.se
+[bq]: http://http://www.blueprintcss.org/
+[jq]: http://www.jquery.com
 
 Licens
 ======
