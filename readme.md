@@ -7,7 +7,7 @@ Använder bland annat [Google Maps][maps], [BluePrint][bp] and [jQuery][jq].
 
 [maps]: http://code.google.com/apis/maps/index.html
 [appening]: http://www.appening.se
-[bq]: http://http://www.blueprintcss.org/
+[bp]: http://http://www.blueprintcss.org/
 [jq]: http://www.jquery.com
 [aandroid]: https://github.com/nollbit/Avtryck
 
