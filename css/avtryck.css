@@ -16,18 +16,18 @@ body {
 	border: 1px solid gray;
 	position: absolute;
 	left: 10%;
-	top: 10px;
-	width: 80%;
-	height: 22px;
+	top: 5px;
+	width: 76%;
+	height: 20px;
 	z-index: 100;
-
-	padding: 3px;
 
 	background-color: #451c54;
 	/* IE */
 	filter:alpha(opacity=60);
 	/* everybody else... */
 	opacity:0.6;
+	
+	line-height: 15px;
 }
 
 #topbar #title {
@@ -35,10 +35,58 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 18px;
-	font-size: 1.7em;
+	font-size: 1.4em;
 }
 
 #topbar #user {
 	color: white;
-	margin-left: 67%;
+	margin-left: 55%;
+}
+
+#placeedit {
+	position: absolute;
+	width: 200px;
+	height: 170px;
+	right: 10px;
+	top: 70px;
+
+	border: 1px solid #DDDDDD ;
+	background-color: #EEEEEE;
+	/* IE */
+	filter:alpha(opacity=90);
+	/* everybody else... */
+	opacity:0.9;
+	
+	line-height: 15px;
+	
+	z-index: 100;
+
+	padding: 5px;
+	
+}
+
+#placeedit #editlabel {
+	padding: 2px;
+	background-color: #CCC;
+	font-size: 1.2em;
+}
+
+#placeedit #placemeta input {
+	width: 196px;
+}
+#placeedit #placemeta textarea {
+	width: 188px;
+	height: 30px;
+}
+
+#placeedit #placewalker  {
+	margin-top: 10px;
+	padding-top: 5px;
+	border-top: 1px solid gray;
+}
+
+#placeedit #placewalker #position  {
+	display: inline-block;
+	text-align: center;
+	width: 134px;
 }

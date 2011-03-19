@@ -66,7 +66,11 @@ var avtryck = {
 		for (var pi=0; pi<4; pi++) {
 			p = places[pi];
 			seq = pi+1;
-			icon = "http://thydzik.com/thydzikGoogleMap/markerlink.php?color=FF1c54&text="+seq
+			iconColor = "FF5cA4";
+			if (pi==0) {
+				iconColor = "FF1c54";
+			} 
+			icon = "http://thydzik.com/thydzikGoogleMap/markerlink.php?color="+iconColor+"&text="+seq
 			pos = new google.maps.LatLng(p.plat,p.plong),
 			new google.maps.Marker({
 			      position: pos,
