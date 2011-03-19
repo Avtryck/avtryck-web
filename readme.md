@@ -3,8 +3,9 @@ Avtryck (Web)
 
 En del av ett [bidrag][aandroid] till [Appening][appening].
 
-Depends on -- and includes -- BluePrint [bp] and jQuery [jq].
+Använder bland annat [Google Maps][maps], [BluePrint][bp] and [jQuery][jq].
 
+[maps]: http://code.google.com/apis/maps/index.html
 [appening]: http://www.appening.se
 [bq]: http://http://www.blueprintcss.org/
 [jq]: http://www.jquery.com
