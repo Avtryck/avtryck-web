@@ -2,6 +2,8 @@ Avtryck (Web)
 =============
 Avtryck är en tjänst för mobila presentationer av rika datakällor. Vår Android-applikation tar dig på guidade rundturer genom ett rikt kulturhistoriskt material. [Läs mer om historien bakom Avtryck][aprojectweb] .
 
+[aprojectweb]: https://github.com/Avtryck/avtryck-projectweb
+
 Här finns början till en webbapplikation för att skapa och redigera rundturer. Vi har registrerat domänen tidensavtryck.se för framtida bruk (den pekar just nu hit). Så här såg redigeringsläget ut när vi tävlade på Appening den 19/3 2011:
 
 ![Alt text](https://github.com/Avtryck/avtryck-projectweb/raw/master/appening/captures/avtryck_web_screen_20110319.png "Avtryck route editor")
