@@ -1,7 +1,9 @@
 Avtryck (Web)
 =============
 
-En del av ett [bidrag][aandroid] till [Appening][appening].
+En del av ett [bidrag][aandroid] till [Appening][appening]. Så här såg det ut när vi tävlade den 19/3 2011:
+
+![Alt text](https://github.com/Avtryck/avtryck-projectweb/raw/master/appening/avtryck_web_screen_20110319.png "Avtryck route editor")
 
 Använder bland annat [Google Maps][maps], [BluePrint][bp] and [jQuery][jq].
 
