@@ -9,7 +9,7 @@ Använder bland annat [Google Maps][maps], [BluePrint][bp] and [jQuery][jq].
 [appening]: http://www.appening.se
 [bp]: http://http://www.blueprintcss.org/
 [jq]: http://www.jquery.com
-[aandroid]: https://github.com/nollbit/Avtryck
+[aandroid]: https://github.com/Avtryck/avtryck-android
 
 Licens
 ======
