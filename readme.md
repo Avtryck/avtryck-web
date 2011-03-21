@@ -8,13 +8,14 @@ Här finns början till en webbapplikation för att skapa och redigera rundturer
 
 ![Alt text](https://github.com/Avtryck/avtryck-projectweb/raw/master/appening/captures/avtryck_web_screen_20110319.png "Avtryck route editor")
 
-Använder bland annat [Google Maps][maps], [BluePrint][bp] and [jQuery][jq].
+Använder bland annat [Google Maps][maps], [BluePrint][bp], [jQuery][jq] och [Webapp Improved][webapp2].
 
 [maps]: http://code.google.com/apis/maps/index.html
 [appening]: http://www.appening.se
 [bp]: http://http://www.blueprintcss.org/
 [jq]: http://www.jquery.com
 [aandroid]: https://github.com/Avtryck/avtryck-android
+[webapp2]: http://code.google.com/p/webapp-improved/
 
 Licens
 ======
