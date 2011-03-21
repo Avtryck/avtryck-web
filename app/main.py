@@ -14,18 +14,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from google.appengine.ext import webapp
+import os
+import webapp2 as webapp
 from google.appengine.ext.webapp import util
+from avtryck.handlers import MainHandler, EditHandler
 
-
-class MainHandler(webapp.RequestHandler):
-    def get(self):
-        self.response.out.write('Hello world!')
-
+config = {}
+config["root"] = {
+    "templateroot": os.path.join(os.path.dirname(__file__), 'templates')
+}
 
 def main():
-    application = webapp.WSGIApplication([('/', MainHandler)],
-                                         debug=True)
+    application = webapp.WSGIApplication(
+        [
+                ('/', MainHandler),
+                ('/edit', EditHandler)
+        ],
+        config=config,
+        debug=True)
     util.run_wsgi_app(application)
 
 

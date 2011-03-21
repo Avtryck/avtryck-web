@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        {% block meta %}
+        {% endblock %}
+		<link rel="stylesheet" href="/static/css/blueprint/screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="/static/css/blueprint/print.css" type="text/css" media="print">
+		<!--[if lt IE 8]>
+        <link rel="stylesheet" href="/static/css/blueprint/ie.css" type="text/css" media="screen, projection">
+        <![endif]-->
+		<link rel="stylesheet" href="/static/css/avtryck.css" type="text/css" media="screen, projection">
+        {% block css %}
+        {% endblock %}
+
+
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script src="/static/js/jquery-1.5.1.min.js"></script>
+		<script src="/static/js/avtryck.js"></script>
+        {% block js %}
+        {% endblock %}
+		<title>{% block title %}Avtryck{% endblock %}</title>
+	</head>
+	<body>
+        {% block body %}
+        Body
+        {% endblock %}
+	</body>
+</html>

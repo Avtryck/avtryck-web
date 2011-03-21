@@ -1,41 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="../../static/css/blueprint/screen.css" type="text/css" media="screen, projection">
-		<link rel="stylesheet" href="../../static/css/blueprint/print.css" type="text/css" media="print">
-		<!--[if lt IE 8]>
-        <link rel="stylesheet" href="../../static/css/blueprint/ie.css" type="text/css" media="screen, projection">
-        <![endif]-->
-		<link rel="stylesheet" href="../../static/css/avtryck.css" type="text/css" media="screen, projection">
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<script src="../../static/js/jquery-1.5.1.min.js"></script>
-		<script src="../../static/js/avtryck.js"></script>
-		<title></title>
-	</head>
-	<body>
-		<div id="topbar">
-			<span id="title">Avtryck</span>
-			<span id="user">
-				Inloggad som <a href="jonas.com">Jonas Beckman</a> | <a href="/account">Mitt Konto</a> | <a href="/friends">Vänner</a>
-			</span>
-		</div>
-		<div id="placeedit">
-			<div id="editlabel">
-				Redigera plats
-			</div>
-			<div id="placemeta">
-				<input id="placemetatitle" type="text" value="Runsten"></input>
-				<textarea id="placemetadescription">Gunvid och Torgärd de lät resa sten efter Torsten, sin son...</textarea>
-			</div>
-			Kopplade post(er):<br> <a href="http://asfasf">Runsten (k-samsök)</a>
-			<div id="placewalker">
-				<button id="left">&lt;</button>
-				<div id="position"><strong>1</strong> av <strong>4</strong></div>
-				<button id="right">&gt;</button>
-			</div>
-		</div>
-		<div id="map_canvas" style="width:100%; height:100%"></div>
-	</body>
-</html>
+{% extends "../base.html" %}
+{% block meta %}
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+{% endblock %}
+
+{% block body %}
+    <div id="topbar">
+        <span id="title">Avtryck</span>
+        <span id="user">
+            Inloggad som <a href="jonas.com">Jonas Beckman</a> | <a href="/account">Mitt Konto</a> | <a href="/friends">Vänner</a>
+        </span>
+    </div>
+    <div id="placeedit">
+        <div id="editlabel">
+            Redigera plats
+        </div>
+        <div id="placemeta">
+            <input id="placemetatitle" type="text" value="Runsten"></input>
+            <textarea id="placemetadescription">Gunvid och Torgärd de lät resa sten efter Torsten, sin son...</textarea>
+        </div>
+        Kopplade post(er):<br> <a href="http://asfasf">Runsten (k-samsök)</a>
+        <div id="placewalker">
+            <button id="left">&lt;</button>
+            <div id="position"><strong>1</strong> av <strong>4</strong></div>
+            <button id="right">&gt;</button>
+        </div>
+    </div>
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+{% endblock %}
