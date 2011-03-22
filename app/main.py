@@ -20,8 +20,12 @@ from google.appengine.ext.webapp import util
 from avtryck.handlers import MainHandler, EditHandler
 
 config = {}
-config["root"] = {
-    "templateroot": os.path.join(os.path.dirname(__file__), 'templates')
+config["templates"] = {
+    "root": os.path.join(os.path.dirname(__file__), 'templates'),
+    "default_params": {
+        "imageroot": "/static/images"
+    }
+
 }
 
 def main():
