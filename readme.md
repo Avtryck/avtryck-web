@@ -12,7 +12,7 @@ Använder bland annat [Google Maps][maps], [BluePrint][bp], [jQuery][jq] och [We
 
 [maps]: http://code.google.com/apis/maps/index.html
 [appening]: http://www.appening.se
-[bp]: http://http://www.blueprintcss.org/
+[bp]: http://www.blueprintcss.org/
 [jq]: http://www.jquery.com
 [aandroid]: https://github.com/Avtryck/avtryck-android
 [webapp2]: http://code.google.com/p/webapp-improved/
