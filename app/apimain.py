@@ -3,21 +3,21 @@
 import webapp2 as webapp
 from google.appengine.ext.webapp import util
 
-from app.avtryck.api.handlers.route import RouteListHandler, RouteHandler
-from app.avtryck.api.handlers.place import PlaceListHandler, PlaceHandler
-from app.avtryck.api.handlers.record import RecordListHandler, RecordHandler
+from avtryck.api.handlers.route import RouteListHandler, RouteHandler
+from avtryck.api.handlers.place import PlaceListHandler, PlaceHandler
+from avtryck.api.handlers.record import RecordListHandler, RecordHandler
 
 config = {}
 
 def main():
     application = webapp.WSGIApplication(
         [
-                webapp.Route('/routes', RouteListHandler),
-                webapp.Route('/routes/<routeId>', RouteHandler),
-                webapp.Route('/routes/<routeId>/places', PlaceListHandler),
-                webapp.Route('/routes/<routeId>/places/<placeId>', PlaceHandler),
-                webapp.Route('/routes/<routeId>/places/<placeId>/records', RecordListHandler),
-                webapp.Route('/routes/<routeId>/places/<placeId>/records/<recordId>', RecordHandler),
+                webapp.Route(r'/api/routes', RouteListHandler),
+                webapp.Route(r'/api/routes/<routeId:[\d]+>', RouteHandler),
+                webapp.Route(r'/api/routes/<routeId:[\d]+>/places', PlaceListHandler),
+                webapp.Route(r'/api/routes/<routeId:[\d]+>/places/<placeId:[\d]+>', PlaceHandler),
+                webapp.Route(r'/api/routes/<routeId:[\d]+>/places/<placeId:[\d]+>/records', RecordListHandler),
+                webapp.Route(r'/api/routes/<routeId:[\d]+>/places/<placeId:[\d]+>/records/<recordId:[\d]+>', RecordHandler),
         ],
         config=config,
         debug=True)
