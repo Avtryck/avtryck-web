@@ -16,6 +16,15 @@ class RouteListHandler(webapp.RequestHandler):
             'yo': 'json',
         }))
 
+    def post(self):
+        pass
+
 class RouteHandler(webapp.RequestHandler):
-    def get(self):
+    def get(self, route_id):
+        pass
+
+    def put(self, route_id):
+        pass
+
+    def delete(self, route_id):
         pass
