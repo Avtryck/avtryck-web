@@ -8,10 +8,13 @@ Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 """
 
 import webapp2 as webapp
+from django.utils import simplejson
 
 class RouteListHandler(webapp.RequestHandler):
     def get(self):
-        pass
+        self.response.out.write(simplejson.dumps({
+            'yo': 'json',
+        }))
 
 class RouteHandler(webapp.RequestHandler):
     def get(self):
