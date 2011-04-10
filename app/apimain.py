@@ -13,11 +13,11 @@ def main():
     application = webapp.WSGIApplication(
         [
                 webapp.Route(r'/api/routes', RouteListHandler),
-                webapp.Route(r'/api/routes/<routeId:[\d]+>', RouteHandler),
-                webapp.Route(r'/api/routes/<routeId:[\d]+>/places', PlaceListHandler),
-                webapp.Route(r'/api/routes/<routeId:[\d]+>/places/<placeId:[\d]+>', PlaceHandler),
-                webapp.Route(r'/api/routes/<routeId:[\d]+>/places/<placeId:[\d]+>/records', RecordListHandler),
-                webapp.Route(r'/api/routes/<routeId:[\d]+>/places/<placeId:[\d]+>/records/<recordId:[\d]+>', RecordHandler),
+                webapp.Route(r'/api/routes/<route_id:[\d]+>', RouteHandler),
+                webapp.Route(r'/api/routes/<route_id:[\d]+>/places', PlaceListHandler),
+                webapp.Route(r'/api/routes/<route_id:[\d]+>/places/<place_id:[\d]+>', PlaceHandler),
+                webapp.Route(r'/api/routes/<route_id:[\d]+>/places/<place_id:[\d]+>/records', RecordListHandler),
+                webapp.Route(r'/api/routes/<route_id:[\d]+>/places/<place_id:[\d]+>/records/<record_id:[\d]+>', RecordHandler),
         ],
         config=config,
         debug=True)

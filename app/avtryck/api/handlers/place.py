@@ -10,9 +10,12 @@ Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 import webapp2 as webapp
 
 class PlaceListHandler(webapp.RequestHandler):
-    def get(self):
+    def get(self, route_id):
         pass
 
 class PlaceHandler(webapp.RequestHandler):
-    def get(self):
+    def get(self, route_id, place_id):
+        pass
+
+    def delete(self, route_id, place_id):
         pass
